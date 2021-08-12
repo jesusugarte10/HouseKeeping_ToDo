@@ -65,10 +65,18 @@ function addToDo(ToDo, id, done, trash){
     list.insertAdjacentHTML(position, item);
 }
 
+//Only Grab Numbers
+function checkPattern(elem) {
+    if(!elem.value.match('^' + elem.getAttribute('pattern') + '$')) {
+      alert('Please match the format');
+    }
+  }   
+
 //add an item to the list user the enter key
 document.addEventListener("keyup", function(event){
     if(event.keyCode == 13){
-        const toDo = input.value;
+
+        const toDo = "UW-"+input.value;
         if(toDo){
             addToDo(toDo, id, false, false);
 
@@ -78,6 +86,7 @@ document.addEventListener("keyup", function(event){
                 done: false,
                 trash: false
             })
+            LIST.sort();
             //add item to local storage (this code must be added where the list array is updated)
             localStorage.setItem("TODO", JSON.stringify(LIST));
 
@@ -92,7 +101,6 @@ function completeToDo(element){
     element.classList.toggle(CHECK);
     element.classList.toggle(UNCHECK);
     element.parentNode.querySelector(".text").classList.toggle(LINE_THROUGH);
-
     LIST[element.id].done = LIST[element.id].done ? false : true;
 }
 

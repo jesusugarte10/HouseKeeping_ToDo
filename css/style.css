@@ -10,15 +10,16 @@ body{
 .container{
     padding:10px;
     width:380px;
-    margin:0 auto;
+    margin:auto;
+    border-radius: 15px 15px 0 0;
 }
 
 /* ------------ header ------------ */
 .header{
     width: 380px;
-    height:200px;
-    background-image: url('../img/bg2.jpg');
-    background-size: 100% 200%;
+    height: 190px;
+    background-image: url('../img/ucf.png');
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     border-radius: 15px 15px 0 0;
     position: relative;
@@ -41,10 +42,10 @@ body{
 }
 #date{
     position: absolute;
-    bottom: 10px;
-    left: 10px;
+    bottom: 5px;
+    left: 15px;
     color: #FFF;
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'Titillium Web', sans-serif;
 }
 
@@ -58,6 +59,7 @@ body{
 }
 .content::-webkit-scrollbar { 
     display: none; 
+    
 }
 .content ul{
     padding:0;
@@ -118,11 +120,12 @@ body{
     background-color: #FFF;
     padding: 10px;
     border-top: 1px solid rgba(0,0,0,0.1);
+    border-radius: 0 0 15px 15px;
 }
 .add-to-do i{
     position: absolute;
     font-size: 40px;
-    color: #4162f6;
+    color: #9f9d0a;
 }
 
 .add-to-do input{
@@ -136,22 +139,22 @@ body{
     padding-left:10px;
 }
 .add-to-do input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    color: #4162f6;
+    color: #9f9d0a;
     font-family: 'Titillium Web', sans-serif;
     font-size: 20px;
 }
 .add-to-do input::-moz-placeholder { /* Firefox 19+ */
-    color: #4162f6;
+    color: #9f9d0a;
     font-family: 'Titillium Web', sans-serif;
     font-size: 20px;
 }
 .add-to-do input:-ms-input-placeholder { /* IE 10+ */
-    color: #4162f6;
+    color: #9f9d0a;
     font-family: 'Titillium Web', sans-serif;
     font-size: 20px;
 }
 .add-to-do input:-moz-placeholder { /* Firefox 18- */
-    color: #4162f6;
+    color:#9f9d0a;
     font-family: 'Titillium Web', sans-serif;
     font-size: 20px;
 }

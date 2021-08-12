@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>To Do List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web">
     <link href="css/font-awesome.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -21,7 +22,8 @@
         </div>
         <div class="add-to-do">
             <i class="fa fa-plus-circle"></i>
-            <input type="text" id="input" placeholder="Add Room to Clean">
+            <input type="text" id="input" maxlength="4" pattern="[0-9]{4}" placeholder="XXXX (Add Room To Clean)" onchange=
+            checkPattern(this)>
         </div>
     </div>
     <script src="js/app.js"></script>
